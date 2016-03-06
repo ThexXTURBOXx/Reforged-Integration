@@ -1,0 +1,31 @@
+itemGroup.reforgedintegration=Reforged Integration
+
+item.thaumium_battleaxe.name=Thaumium Battleaxe
+item.void_battleaxe.name=Void Battleaxe
+item.dark_matter_battleaxe.name=Dark Matter Battleaxe
+item.red_matter_battleaxe.name=Red Matter Battleaxe
+
+item.thaumium_boomerang.name=Thaumium Boomerang
+item.void_boomerang.name=Void Boomerang
+item.dark_matter_boomerang.name=Dark Matter Boomerang
+item.red_matter_boomerang.name=Red Matter Boomerang
+
+item.thaumium_saber.name=Thaumium Sabre
+item.void_saber.name=Void Sabre
+item.dark_matter_saber.name=Dark Matter Sabre
+item.red_matter_saber.name=Red Matter Sabre
+
+item.thaumium_musket.name=Musket with Thaumium Bayonet
+item.void_musket.name=Musket with Void Bayonet
+item.dark_matter_musket.name=Musket with Dark Matter Bayonet
+item.red_matter_musket.name=Musket with Red Matter Bayonet
+
+item.thaumium_knife.name=Thaumium Knife
+item.void_knife.name=Void Knife
+item.dark_matter_knife.name=Dark Matter Knife
+item.red_matter_knife.name=Red Matter Knife
+
+item.thaumium_katana.name=Thaumium Katana
+item.void_katana.name=Void Katana
+item.dark_matter_katana.name=Dark Matter Katana
+item.red_matter_katana.name=Red Matter Katana

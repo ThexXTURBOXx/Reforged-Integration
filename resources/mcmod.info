@@ -1,0 +1,47 @@
+[
+{
+  "modid": "Reforged|IntegrationCore",
+  "name": "Reforged|Integration Core",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "description": "Adds integration for other mods (This is the coremod)",
+  "credits": "Snow_Yoshi98, baddaspig and Sunconure11 for textures",
+  "logoFile": "/assets/reforged/textures/others/logo.png",
+  "url": "https://github.com/ThexXTURBOXx/Reforged-Integration",
+  "updateUrl": "http://minecraft.curseforge.com/projects/reforged-integration/files",
+  "authorList": [ "ThexXTURBOXx", "Silvercatcher" ],
+  "parent": "reforged",
+  "screenshots": [],
+  "dependencies": []
+},
+{
+  "modid": "Reforged|IntegrationThaumcraft",
+  "name": "Reforged|Integration Thaumcraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "description": "Adds integration for other mods (Thaumcraft)",
+  "credits": "Snow_Yoshi98, baddaspig and Sunconure11 for textures",
+  "logoFile": "/assets/reforged/textures/others/logo.png",
+  "url": "https://github.com/ThexXTURBOXx/Reforged-Integration",
+  "updateUrl": "http://minecraft.curseforge.com/projects/reforged-integration/files",
+  "authorList": [ "ThexXTURBOXx", "Silvercatcher" ],
+  "parent": "reforged",
+  "screenshots": [],
+  "dependencies": []
+},
+{
+  "modid": "Reforged|IntegrationProjectE",
+  "name": "Reforged|Integration ProjectE",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "description": "Adds integration for other mods (ProjectE)",
+  "credits": "Snow_Yoshi98, baddaspig and Sunconure11 for textures",
+  "logoFile": "/assets/reforged/textures/others/logo.png",
+  "url": "https://github.com/ThexXTURBOXx/Reforged-Integration",
+  "updateUrl": "http://minecraft.curseforge.com/projects/reforged-integration/files",
+  "authorList": [ "ThexXTURBOXx", "Silvercatcher" ],
+  "parent": "reforged",
+  "screenshots": [],
+  "dependencies": []
+}
+]
