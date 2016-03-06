@@ -1,7 +1,7 @@
 #Reforged Integration
-A extension for the mod "Reforged".
-Reforged Integration adds integration for other mods, like Thaumcraft, ProjectE etc.
-The public repo for Reforged can be found here: [GitHub](https://github.com/TheOnlySilverClaw/Reforged)
+A extension for the mod "Reforged".<br>
+Reforged Integration adds integration for other mods, like Thaumcraft, ProjectE etc.<br>
+The public repo for Reforged can be found here: [GitHub](https://github.com/TheOnlySilverClaw/Reforged)<br>
 The downloads can be found here: [Later...]()
 
 # Reforged
