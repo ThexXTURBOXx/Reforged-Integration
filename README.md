@@ -2,6 +2,7 @@
 A extension for the mod "Reforged".
 Reforged Integration adds integration for other mods, like Thaumcraft, ProjectE etc.
 The public repo for Reforged can be found here: [GitHub](https://github.com/TheOnlySilverClaw/Reforged)
+The downloads can be found here: [Later...]()
 
 # Reforged
 A successor (not port) of Balkon's Weapon Mod, will add primitive, medieval and some gunpowder weapons. <br>
