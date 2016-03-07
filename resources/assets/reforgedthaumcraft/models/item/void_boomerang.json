@@ -1,6 +1,6 @@
 {
     "parent": "reforged:item/boomerang",
     "textures": {
-        "layer0": "reforged:items/integration/boomerang_rm"
+        "layer0": "reforgedintegrationcore:items/boomerang_void"
     }
 }

@@ -2,6 +2,6 @@
     "parent": "reforged:item/saber",
 
     "textures": {
-        "layer0": "reforged:items/integration/saber_void"
+        "layer0": "reforgedintegrationcore:items/saber_dm"
     }
 }

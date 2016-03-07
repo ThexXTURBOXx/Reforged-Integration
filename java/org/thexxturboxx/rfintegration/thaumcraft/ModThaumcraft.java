@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class ModThaumcraft {
 
 	public static final String NAME = "Thaumcraft Integration";
-	public static final String ID = "Reforged|IntegrationThaumcraft";
+	public static final String ID = "ReforgedThaumcraft";
 
     @Instance(ID)
     public static ModThaumcraft instance;

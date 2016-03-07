@@ -2,6 +2,6 @@
     "parent": "reforged:item/musket",
 
     "textures": {
-        "layer0": "reforged:items/integration/musket_dm"
+        "layer0": "reforgedintegrationcore:items/musket_void"
     }
 }

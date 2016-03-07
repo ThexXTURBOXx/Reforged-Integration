@@ -1,6 +1,6 @@
 package org.thexxturboxx.rfintegration.core;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.silvercatcher.reforged.items.ItemExtension;
@@ -20,30 +20,22 @@ public class Registry {
 	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE";
 	
 	/**All the Dependencies for the child mods*/
-	public static final String ChildDeps = "required-after:Reforged|IntegrationCore";
+	public static final String ChildDeps = "required-after:reforged;required-after:reforgedintegrationcore";
 	
-	//Counters
+	//Countersößp
 	public static int counterEntities = 0;
 	
-	/**Every item on that list gets registered*/
-	public static final List<Item> registrationList = new ArrayList<Item>();
-	
-	//Registry
-	/**Add an item to the list*/
-	public static void addItem(Item item) {
-		registrationList.add(item);
-	}
-	
-	/**Registers all items out of the registrationList*/
-	public static void registerItems() {
-		for(Item item : registrationList) {
+	//Registry	
+	/**Registers all items on the given list*/
+	public static void registerItems(List<Item> regListItems) {
+		for(Item item : regListItems) {
 			GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
-		}		
+		}
 	}
 	
 	/**Registers all recipes of the registered items*/
-	public static void registerRecipes() {
-		for(Item item : registrationList) {
+	public static void registerRecipes(List<Item> regListItems) {
+		for(Item item : regListItems) {
 			if(item instanceof ItemExtension) {
 				((ItemExtension) (item)).registerRecipes();
 			}

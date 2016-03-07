@@ -1,6 +1,6 @@
 [
 {
-  "modid": "Reforged|IntegrationCore",
+  "modid": "ReforgedIntegrationCore",
   "name": "Reforged|Integration Core",
   "version": "${version}",
   "mcversion": "${mcversion}",
@@ -15,7 +15,7 @@
   "dependencies": []
 },
 {
-  "modid": "Reforged|IntegrationThaumcraft",
+  "modid": "ReforgedThaumcraft",
   "name": "Reforged|Integration Thaumcraft",
   "version": "${version}",
   "mcversion": "${mcversion}",
@@ -30,7 +30,7 @@
   "dependencies": []
 },
 {
-  "modid": "Reforged|IntegrationProjectE",
+  "modid": "ReforgedProjectE",
   "name": "Reforged|Integration ProjectE",
   "version": "${version}",
   "mcversion": "${mcversion}",

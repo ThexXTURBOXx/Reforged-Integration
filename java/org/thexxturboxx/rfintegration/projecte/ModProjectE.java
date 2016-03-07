@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class ModProjectE {
 
 	public static final String NAME = "ProjectE Integration";
-	public static final String ID = "Reforged|IntegrationProjectE";
+	public static final String ID = "ReforgedProjectE";
 
     @Instance(ID)
     public static ModProjectE instance;
