@@ -1,5 +1,5 @@
 {
-    "parent": "reforgeditem/knife",
+    "parent": "reforged:item/knife",
 
     "textures": {
         "layer0": "reforgedintegrationcore:items/knife_thaumium"

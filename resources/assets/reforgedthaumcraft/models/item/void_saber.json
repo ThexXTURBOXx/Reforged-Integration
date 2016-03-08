@@ -1,5 +1,5 @@
 {
-    "parent": "reforgeditem/saber",
+    "parent": "reforged:item/saber",
 
     "textures": {
         "layer0": "reforgedintegrationcore:items/saber_void"

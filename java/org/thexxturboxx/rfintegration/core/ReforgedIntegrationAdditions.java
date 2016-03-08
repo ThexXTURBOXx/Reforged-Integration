@@ -40,6 +40,8 @@ public class ReforgedIntegrationAdditions {
 	public static Item RM_KNIFE;
 	
 	//ResourceLocations
+	public static final ResourceLocation THAUMIUM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/thaumium_boomerang.png");
+	public static final ResourceLocation VOID_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/void_boomerang.png");
 	public static final ResourceLocation DM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/dark_matter_boomerang.png");
 	public static final ResourceLocation RM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/red_matter_boomerang.png");
 }

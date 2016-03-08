@@ -74,7 +74,5 @@ public class CommonProxy extends ProxyBase {
 	}
 	
 	@Override
-	public void registerItemRenderers() {
-		
-	}
+	public void registerItemRenderers() {}
 }

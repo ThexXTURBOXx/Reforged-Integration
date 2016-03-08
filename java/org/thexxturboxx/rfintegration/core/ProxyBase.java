@@ -49,7 +49,7 @@ public abstract class ProxyBase {
 	public void preInit(FMLPreInitializationEvent e) {
 		if(Loader.isModLoaded(getModName())) {
 			registerMatDefs();
-			registerItems();			
+			registerItems();
 		}
 	}
 	

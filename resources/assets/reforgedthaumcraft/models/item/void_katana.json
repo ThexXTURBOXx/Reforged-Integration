@@ -1,5 +1,5 @@
 {
-    "parent": "reforgeditem/katana",
+    "parent": "reforged:item/katana",
 
     "textures": {
         "layer0": "reforgedintegrationcore:items/katana_void"

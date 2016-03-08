@@ -1,5 +1,5 @@
 {
-    "parent": "reforgeditem/battleaxe",
+    "parent": "reforged:item/battleaxe",
 
     "textures": {
         "layer0": "reforgedintegrationcore:items/battleaxe_thaumium"
