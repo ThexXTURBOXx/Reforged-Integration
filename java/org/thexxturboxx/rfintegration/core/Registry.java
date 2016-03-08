@@ -20,9 +20,9 @@ public class Registry {
 	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE";
 	
 	/**All the Dependencies for the child mods*/
-	public static final String ChildDeps = "required-after:reforged;required-after:reforgedintegrationcore";
+	public static final String ChildDeps = "required-after:reforged;required-after:ReforgedIntegrationCore";
 	
-	//Countersößp
+	//Counters
 	public static int counterEntities = 0;
 	
 	//Registry	

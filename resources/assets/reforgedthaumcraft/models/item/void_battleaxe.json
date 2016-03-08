@@ -1,5 +1,5 @@
 {
-    "parent": "reforged:item/battleaxe",
+    "parent": "reforgeditem/battleaxe",
 
     "textures": {
         "layer0": "reforgedintegrationcore:items/battleaxe_void"

@@ -15,7 +15,7 @@ public abstract class ProxyBase {
 		setModName(modname);
 	}
 	
-	/**Saves all the instances of the Integration APIs*/
+	/**Saves all the items of the Integration APIs*/
 	public static List<Item> regListItems = new ArrayList<Item>();
 	
 	/**Saves the name of the mod, that needs to get integrated*/

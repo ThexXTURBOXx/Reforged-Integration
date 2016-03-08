@@ -1,7 +1,5 @@
 package org.thexxturboxx.rfintegration.projecte;
 
-import org.thexxturboxx.rfintegration.core.ModReforgedIntegration;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.resources.model.ModelResourceLocation;
@@ -25,7 +23,7 @@ public class ClientProxy extends CommonProxy {
 	public void registerItemRenderers() {
 		ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();		
 		for(Item item : regListItems) {
-			mesher.register(item, 0, new ModelResourceLocation(ModReforgedIntegration.ID + ":" 
+			mesher.register(item, 0, new ModelResourceLocation(ModProjectE.ID + ":" 
 					+ item.getUnlocalizedName().substring(5), "inventory"));
 		}
 	}
