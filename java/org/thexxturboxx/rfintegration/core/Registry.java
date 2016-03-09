@@ -1,6 +1,5 @@
 package org.thexxturboxx.rfintegration.core;
 
-import java.util.HashMap;
 import java.util.List;
 
 import org.silvercatcher.reforged.items.ItemExtension;

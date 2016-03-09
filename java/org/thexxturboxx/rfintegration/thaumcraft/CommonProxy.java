@@ -65,7 +65,4 @@ public class CommonProxy extends ProxyBase {
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
 	}
-	
-	@Override
-	public void registerItemRenderers() {}
 }

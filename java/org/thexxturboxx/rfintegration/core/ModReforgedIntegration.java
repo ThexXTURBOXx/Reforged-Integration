@@ -1,7 +1,10 @@
 package org.thexxturboxx.rfintegration.core;
 
+import java.util.Random;
+
+import org.silvercatcher.reforged.api.ReforgedAdditions;
+
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -14,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = ModReforgedIntegration.ID, name = ModReforgedIntegration.NAME, version = ModReforgedIntegration.VERSION, dependencies = Registry.Deps)
 public class ModReforgedIntegration {
 	
+	
 	public static final String NAME = "Integration Core";
 	public static final String ID = "ReforgedIntegrationCore";
 	public static final String TABNAME = "reforgedintegration";
@@ -22,7 +26,12 @@ public class ModReforgedIntegration {
     public static final CreativeTabs tabReforgedIntegration = new CreativeTabs(TABNAME) {
 		@Override
 		public Item getTabIconItem() {
-			return Items.acacia_door;
+			Item i;
+			if ((i = ProxyBase.battleaxeList.get((new Random()).nextInt(ProxyBase.battleaxeList.size()))) != null) {
+				return i;
+			} else {
+				return ReforgedAdditions.IRON_BATTLE_AXE;
+			}
 		}
 	};
     

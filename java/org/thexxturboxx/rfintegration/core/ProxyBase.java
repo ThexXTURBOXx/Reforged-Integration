@@ -3,6 +3,8 @@ package org.thexxturboxx.rfintegration.core;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
+
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -16,7 +18,10 @@ public abstract class ProxyBase {
 	}
 	
 	/**Saves all the items of the Integration APIs*/
-	public static List<Item> regListItems = new ArrayList<Item>();
+	protected List<Item> regListItems = new ArrayList<Item>();
+	
+	/**Saves all possible items for the Creative Tab Icon*/
+	public static List<ItemBattleAxe> battleaxeList = new ArrayList<ItemBattleAxe>();
 	
 	/**Saves the name of the mod, that needs to get integrated*/
 	String modName;
@@ -39,11 +44,12 @@ public abstract class ProxyBase {
 		modName = name;
 	}
 	
-	public abstract void registerItemRenderers();
+	public void registerItemRenderers() { }
 	
 	/**Simple Registry for the Item*/
 	protected void simpleReg(Item item) {
 		regListItems.add(item.setCreativeTab(ModReforgedIntegration.tabReforgedIntegration));
+		if(item instanceof ItemBattleAxe) battleaxeList.add((ItemBattleAxe) item);
 	}
 	
 	public void preInit(FMLPreInitializationEvent e) {
