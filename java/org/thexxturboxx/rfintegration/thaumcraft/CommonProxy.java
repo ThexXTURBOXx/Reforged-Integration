@@ -1,5 +1,7 @@
 package org.thexxturboxx.rfintegration.thaumcraft;
 
+import org.silvercatcher.reforged.ReforgedRegistry;
+import org.silvercatcher.reforged.items.recipes.BoomerangEnchRecipe;
 import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
 import org.silvercatcher.reforged.items.weapons.ItemBoomerang;
 import org.silvercatcher.reforged.items.weapons.ItemKatana;
@@ -16,7 +18,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.RecipeSorter.Category;
 import thaumcraft.api.ThaumcraftMaterials;
 import thaumcraft.api.items.ItemsTC;
 
@@ -64,5 +68,11 @@ public class CommonProxy extends ProxyBase {
 	
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
+	}
+	
+	@Override
+	public void postInit(FMLPostInitializationEvent event) {
+		super.postInit(event);
+		ThaumcraftResearch.init();
 	}
 }

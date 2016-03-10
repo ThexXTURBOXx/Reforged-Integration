@@ -3,6 +3,8 @@ package org.thexxturboxx.rfintegration.core;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.silvercatcher.reforged.ReforgedRegistry;
+import org.silvercatcher.reforged.items.recipes.BoomerangEnchRecipe;
 import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
 
 import net.minecraft.item.Item;
@@ -10,6 +12,7 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.RecipeSorter.Category;
 
 public abstract class ProxyBase {
 	
@@ -62,7 +65,7 @@ public abstract class ProxyBase {
 	public void init(FMLInitializationEvent e) {
 		if(Loader.isModLoaded(getModName())) {
 			registerItemRenderers();
-			Registry.registerRecipes(regListItems);
+			if(!(getModName().equals("Thaumcraft"))) Registry.registerRecipes(regListItems);
 		}
 	}
 	
