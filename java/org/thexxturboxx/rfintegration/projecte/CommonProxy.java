@@ -42,24 +42,24 @@ public class CommonProxy extends ProxyBase {
 	@Override
 	public void registerItems() {
 		super.registerItems();
-		simpleReg(ReforgedIntegrationAdditions.DM_KNIFE = new ItemKnife(ProjectE_DarkMatter));
+		simpleReg(ReforgedIntegrationAdditions.DM_KNIFE = new ItemKnife(ProjectE_DarkMatter, true));
 		ResourceLocation[] rs_dm = new ResourceLocation[]{ReforgedIntegrationAdditions.DM_BOOMERANG_TEX};
 		Item[] i_dm = new Item[]{ReforgedIntegrationAdditions.DM_KNIFE};
 		MaterialManager.addOthers(ProjectE_DarkMatter, rs_dm, i_dm);
-		simpleReg(ReforgedIntegrationAdditions.DM_MUSKET = new ItemMusketWithBayonet(ProjectE_DarkMatter));
-		simpleReg(ReforgedIntegrationAdditions.DM_BATTLE_AXE = new ItemBattleAxe(ProjectE_DarkMatter));
-		simpleReg(ReforgedIntegrationAdditions.DM_BOOMERANG = new ItemBoomerang(ProjectE_DarkMatter));
-		simpleReg(ReforgedIntegrationAdditions.DM_SABER = new ItemSaber(ProjectE_DarkMatter));
-		simpleReg(ReforgedIntegrationAdditions.DM_KATANA = new ItemKatana(ProjectE_DarkMatter));
-		simpleReg(ReforgedIntegrationAdditions.RM_KNIFE = new ItemKnife(ProjectE_RedMatter));
+		simpleReg(ReforgedIntegrationAdditions.DM_MUSKET = new ItemMusketWithBayonet(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_BATTLE_AXE = new ItemBattleAxe(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_BOOMERANG = new ItemBoomerang(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_SABER = new ItemSaber(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_KATANA = new ItemKatana(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_KNIFE = new ItemKnife(ProjectE_RedMatter, true));
 		ResourceLocation[] rs_rm = new ResourceLocation[]{ReforgedIntegrationAdditions.RM_BOOMERANG_TEX};
 		Item[] i_rm = new Item[]{ReforgedIntegrationAdditions.RM_KNIFE};
 		MaterialManager.addOthers(ProjectE_RedMatter, rs_rm, i_rm);
-		simpleReg(ReforgedIntegrationAdditions.RM_MUSKET = new ItemMusketWithBayonet(ProjectE_RedMatter));
-		simpleReg(ReforgedIntegrationAdditions.RM_BATTLE_AXE = new ItemBattleAxe(ProjectE_RedMatter));
-		simpleReg(ReforgedIntegrationAdditions.RM_BOOMERANG = new ItemBoomerang(ProjectE_RedMatter));
-		simpleReg(ReforgedIntegrationAdditions.RM_SABER = new ItemSaber(ProjectE_RedMatter));
-		simpleReg(ReforgedIntegrationAdditions.RM_KATANA = new ItemKatana(ProjectE_RedMatter));
+		simpleReg(ReforgedIntegrationAdditions.RM_MUSKET = new ItemMusketWithBayonet(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_BATTLE_AXE = new ItemBattleAxe(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_BOOMERANG = new ItemBoomerang(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_SABER = new ItemSaber(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_KATANA = new ItemKatana(ProjectE_RedMatter, true));
 	}
 	
 	@Override
