@@ -7,6 +7,7 @@ import org.thexxturboxx.rfintegration.core.ReforgedIntegrationAdditions;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.Loader;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -19,9 +20,9 @@ import thaumcraft.api.research.ResearchPage;
 public class ThaumcraftResearch {
 	
 	public static void init() {
-		 ResearchCategories.registerCategory(ReforgedMod.ID.toUpperCase(), null, 
-				new ResourceLocation(ModThaumcraft.ID, "textures/research/icon.png"), 
-				new ResourceLocation(ModThaumcraft.ID, "textures/research/background.png"));
+	 	 ResearchCategories.registerCategory(ReforgedMod.ID.toUpperCase(), null, 
+	 		new ResourceLocation(ModThaumcraft.ID, "textures/research/icon.png"), 
+	 		new ResourceLocation(ModThaumcraft.ID, "textures/research/background.png"));
 		 ShapedArcaneRecipe voidboomerangrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"VOIDBOOMERANG", new ItemStack(ReforgedIntegrationAdditions.VOID_BOOMERANG), 
 			new AspectList().add(Aspect.ORDER, 5).add(Aspect.ENTROPY, 5).add(ReforgedIntegrationAdditions.FORGING, 5), "tss", "  s", "  t", 't', new ItemStack(
