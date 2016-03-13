@@ -17,6 +17,7 @@ import org.thexxturboxx.rfintegration.core.Registry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -73,6 +74,8 @@ public class CommonProxy extends ProxyBase {
 	@Override
 	public void postInit(FMLPostInitializationEvent event) {
 		super.postInit(event);
-		ThaumcraftResearch.init();
+		if(Loader.isModLoaded(getModName())) {
+			ThaumcraftResearch.init();
+		}
 	}
 }
