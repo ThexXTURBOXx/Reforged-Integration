@@ -27,7 +27,7 @@ public class Registry {
 	//Counters
 	public static int counterEntities = 0;
 	
-	//Registry	
+	//Registry
 	/**Registers all items on the given list*/
 	public static void registerItems(List<Item> regListItems) {
 		for(Item item : regListItems) {
