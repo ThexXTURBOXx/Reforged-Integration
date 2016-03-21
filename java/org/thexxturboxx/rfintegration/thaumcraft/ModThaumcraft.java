@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ModThaumcraft.ID, name = ModThaumcraft.NAME, version = ModReforgedIntegration.VERSION, dependencies = Registry.ChildDeps)
+@Mod(modid = ModThaumcraft.ID, name = ModThaumcraft.NAME, version = ModReforgedIntegration.VERSION, dependencies = Registry.ChildDeps, acceptedMinecraftVersions=Registry.AcceptedVersions)
 public class ModThaumcraft {
 
 	public static final String NAME = "Thaumcraft Integration";

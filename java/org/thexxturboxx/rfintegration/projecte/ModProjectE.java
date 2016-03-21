@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ModProjectE.ID, name = ModProjectE.NAME, version = ModReforgedIntegration.VERSION, dependencies = Registry.ChildDeps)
+@Mod(modid = ModProjectE.ID, name = ModProjectE.NAME, version = ModReforgedIntegration.VERSION, dependencies = Registry.ChildDeps, acceptedMinecraftVersions=Registry.AcceptedVersions)
 public class ModProjectE {
 
 	public static final String NAME = "ProjectE Integration";

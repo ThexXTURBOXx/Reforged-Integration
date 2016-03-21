@@ -16,10 +16,13 @@ import net.minecraftforge.oredict.RecipeSorter.Category;
 public class Registry {
 
 	/**All the Dependencies for our mod*/
-	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE";
+	public static final String Deps = "required-after:reforged@[0.7-pre1,);after:Baubles;after:Thaumcraft;after:ProjectE";
 	
 	/**All the Dependencies for the child mods*/
-	public static final String ChildDeps = "required-after:reforged;required-after:ReforgedIntegrationCore";
+	public static final String ChildDeps = "required-after:reforged@[0.7-pre1,);required-after:ReforgedIntegrationCore";
+	
+	/***/
+	public static final String AcceptedVersions = "[1.8, 1.8.9]";
 	
 	//Counters
 	public static int counterEntities = 0;
