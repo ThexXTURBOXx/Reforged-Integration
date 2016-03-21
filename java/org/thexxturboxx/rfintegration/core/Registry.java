@@ -56,7 +56,7 @@ public class Registry {
 			throw new IllegalArgumentException("The Category called " + category.name() + " couldn't be found!");
 		}
 		GameRegistry.addRecipe(recipe);
-		RecipeSorter.INSTANCE.register(name, recipeclass, category, catString);
+		RecipeSorter.register(name, recipeclass, category, catString);
 		//NEI and JEI IRecipe Registry [todo]
 	}
 

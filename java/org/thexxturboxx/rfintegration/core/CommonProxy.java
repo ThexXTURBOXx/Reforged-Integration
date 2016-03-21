@@ -5,6 +5,7 @@ import java.io.File;
 import org.silvercatcher.reforged.ReforgedMod;
 
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -27,6 +28,9 @@ public class CommonProxy {
 		
 		//Load Config
 		config.load();
+
+		Global.THAUMCRAFT = config.getBoolean("Thaumcraft", "Modules", Loader.isModLoaded("Thaumcraft"), "Enable Thaumcraft Integration");
+		Global.PROJECTE = config.getBoolean("ProjectE", "Modules", Loader.isModLoaded("ProjectE"), "Enable ProjectE Integration");
 		
 		//Save config
 		config.save();

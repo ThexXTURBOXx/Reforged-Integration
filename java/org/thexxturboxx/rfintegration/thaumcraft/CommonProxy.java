@@ -59,11 +59,13 @@ public class CommonProxy extends ProxyBase {
 		simpleReg(ReforgedIntegrationAdditions.VOID_KATANA = new ItemKatana(ThaumcraftMaterials.TOOLMAT_VOID));
 	}
 	
+	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		super.preInit(event);
 		Registry.registerItems(regListItems);		
 	}
 	
+	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
 	}
