@@ -48,5 +48,5 @@ public class ReforgedIntegrationAdditions {
 	public static final ResourceLocation FORGING_ICON = new ResourceLocation("reforgedthaumcraft:textures/research/forging_aspect.png");
 	
 	//Thaumcraft Aspects
-	public static final Aspect FORGING = new Aspect("forging", 0x003366, new Aspect[] {Aspect.DARKNESS, Aspect.AVERSION}, FORGING_ICON, 1);
+	public static Aspect FORGING = new Aspect("forging", 0x003366, new Aspect[] {Aspect.DARKNESS, Aspect.AVERSION}, FORGING_ICON, 1);
 }
