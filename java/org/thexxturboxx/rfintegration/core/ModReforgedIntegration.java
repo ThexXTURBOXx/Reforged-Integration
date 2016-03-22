@@ -19,7 +19,7 @@ public class ModReforgedIntegration {
 	public static final String NAME = "Integration Core";
 	public static final String ID = "ReforgedIntegrationCore";
 	public static final String TABNAME = "reforgedintegration";
-	public static final String VERSION = "0.2.1-alpha";
+	public static final String VERSION = "0.2.2-alpha";
 	
 	public static final CreativeTabs tabReforgedIntegration = new CreativeTabs(TABNAME) {
 		@Override
@@ -28,7 +28,7 @@ public class ModReforgedIntegration {
 			if (!ProxyBase.battleaxeList.isEmpty() && (i = ProxyBase.battleaxeList.get((new Random()).nextInt(ProxyBase.battleaxeList.size()))) != null) {
 				return i;
 			} else {
-				return ReforgedAdditions.IRON_BATTLE_AXE;
+				return ReforgedAdditions.GOLDEN_BATTLE_AXE;
 			}
 		}
 	};
