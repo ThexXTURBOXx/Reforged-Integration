@@ -2,7 +2,6 @@ package org.thexxturboxx.rfintegration.core;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
-import thaumcraft.api.aspects.Aspect;
 
 /**All the Integration Items (ATTENTION: Could cause NullPointerExceptions
  * if the Item is not loaded (the Material's Mod)!!!*/
@@ -46,7 +45,4 @@ public class ReforgedIntegrationAdditions {
 	public static final ResourceLocation DM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/dark_matter_boomerang.png");
 	public static final ResourceLocation RM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/red_matter_boomerang.png");
 	public static final ResourceLocation FORGING_ICON = new ResourceLocation("reforgedthaumcraft:textures/research/forging_aspect.png");
-	
-	//Thaumcraft Aspects
-	public static Aspect FORGING = new Aspect("forging", 0x003366, new Aspect[] {Aspect.DARKNESS, Aspect.AVERSION}, FORGING_ICON, 1);
 }
