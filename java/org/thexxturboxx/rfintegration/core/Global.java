@@ -17,5 +17,5 @@ public class Global {
 	public static final String AcceptedVersions = "[1.8, 1.8.9]";
 	
 	/**The version of the mods*/
-	public static final String VERSION = "0.2.3-alpha";
+	public static final String VERSION = "0.2.4-alpha";
 }
