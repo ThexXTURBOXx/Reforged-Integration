@@ -53,21 +53,21 @@ public abstract class ProxyBase {
 	}
 	
 	public void preInit(FMLPreInitializationEvent e) {
-		if(Loader.isModLoaded(getModName()) && getModConfig(getModName())) {
+		if(Loader.isModLoaded(getModName())/* && getModConfig(getModName())*/) {
 			registerMatDefs();
 			registerItems();
 		}
 	}
 	
 	public void init(FMLInitializationEvent e) {
-		if(Loader.isModLoaded(getModName()) && getModConfig(getModName())) {
+		if(Loader.isModLoaded(getModName())/* && getModConfig(getModName())*/) {
 			registerItemRenderers();
 			if(!(getModName().equals("Thaumcraft"))) Registry.registerRecipes(regListItems);
 		}
 	}
 	
 	public void postInit(FMLPostInitializationEvent e) {}
-	
+	/*
 	public static boolean getModConfig(String modname) {
 		switch(modname) {
 		case "ProjectE": return Global.PROJECTE;
@@ -75,4 +75,5 @@ public abstract class ProxyBase {
 		default: throw new IllegalArgumentException("How could this happen? The mod " + modname + " can't get integrated!");
 		}
 	}
+	*/
 }

@@ -1,5 +1,6 @@
 package org.thexxturboxx.rfintegration.thaumcraft;
 
+import org.silvercatcher.reforged.ReforgedReferences.GlobalValues;
 import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
 import org.silvercatcher.reforged.items.weapons.ItemBoomerang;
 import org.silvercatcher.reforged.items.weapons.ItemKatana;
@@ -43,7 +44,7 @@ public class CommonProxy extends ProxyBase {
 		ResourceLocation[] rs_thaumium = new ResourceLocation[]{ReforgedIntegrationAdditions.THAUMIUM_BOOMERANG_TEX};
 		Item[] i_thaumium = new Item[]{ReforgedIntegrationAdditions.THAUMIUM_KNIFE};
 		MaterialManager.addOthers(ThaumcraftMaterials.TOOLMAT_THAUMIUM, rs_thaumium, i_thaumium);
-		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_MUSKET = new ItemMusketWithBayonet(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
+		if(GlobalValues.MUSKET) simpleReg(ReforgedIntegrationAdditions.THAUMIUM_MUSKET = new ItemMusketWithBayonet(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_BATTLE_AXE = new ItemBattleAxe(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_BOOMERANG = new ItemBoomerang(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_SABER = new ItemSaber(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
@@ -52,7 +53,7 @@ public class CommonProxy extends ProxyBase {
 		ResourceLocation[] rs_void = new ResourceLocation[]{ReforgedIntegrationAdditions.VOID_BOOMERANG_TEX};
 		Item[] i_void = new Item[]{ReforgedIntegrationAdditions.VOID_KNIFE};
 		MaterialManager.addOthers(ThaumcraftMaterials.TOOLMAT_VOID, rs_void, i_void);
-		simpleReg(ReforgedIntegrationAdditions.VOID_MUSKET = new ItemMusketWithBayonet(ThaumcraftMaterials.TOOLMAT_VOID));
+		if(GlobalValues.MUSKET) simpleReg(ReforgedIntegrationAdditions.VOID_MUSKET = new ItemMusketWithBayonet(ThaumcraftMaterials.TOOLMAT_VOID));
 		simpleReg(ReforgedIntegrationAdditions.VOID_BATTLE_AXE = new ItemBattleAxe(ThaumcraftMaterials.TOOLMAT_VOID));
 		simpleReg(ReforgedIntegrationAdditions.VOID_BOOMERANG = new ItemBoomerang(ThaumcraftMaterials.TOOLMAT_VOID));
 		simpleReg(ReforgedIntegrationAdditions.VOID_SABER = new ItemSaber(ThaumcraftMaterials.TOOLMAT_VOID));

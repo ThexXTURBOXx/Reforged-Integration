@@ -1,6 +1,7 @@
 package org.thexxturboxx.rfintegration.thaumcraft;
 
 import org.silvercatcher.reforged.ReforgedMod;
+import org.silvercatcher.reforged.ReforgedReferences.GlobalValues;
 import org.silvercatcher.reforged.api.ReforgedAdditions;
 import org.thexxturboxx.rfintegration.core.ReforgedIntegrationAdditions;
 
@@ -90,6 +91,7 @@ public class ThaumcraftResearch {
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.ENTROPY, 2), 1, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			THAUMIUM_KNIFE)).setPages(new ResearchPage("tc.knife"), new ResearchPage(
 			thaumiumkniferecipe)).registerResearchItem();
+		if(GlobalValues.MUSKET) {
 		ShapedArcaneRecipe voidmusketrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"VOIDMUSKET", new ItemStack(ReforgedIntegrationAdditions.VOID_MUSKET), 
 			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.EARTH, 100), "mk ", "   ", "   ", 'm',
@@ -105,7 +107,7 @@ public class ThaumcraftResearch {
 		new ResearchItem("THAUMIUMMUSKET", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.EARTH, 2), 3, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			THAUMIUM_MUSKET)).setPages(new ResearchPage("tc.musket"), new ResearchPage(
-			thaumiummusketrecipe)).registerResearchItem();
+			thaumiummusketrecipe)).registerResearchItem();}
 		ShapedArcaneRecipe voidsaberrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"VOIDSABER", new ItemStack(ReforgedIntegrationAdditions.VOID_SABER), 
 			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.WATER, 100), " t ", "t  ", "s  ", 't', new ItemStack(

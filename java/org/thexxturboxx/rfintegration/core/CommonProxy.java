@@ -1,11 +1,5 @@
 package org.thexxturboxx.rfintegration.core;
 
-import java.io.File;
-
-import org.silvercatcher.reforged.ReforgedMod;
-
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -20,6 +14,7 @@ public class CommonProxy {
 	}
 	
 	private void loadConfig(FMLPreInitializationEvent e) {
+		/*
 		File configdir = new File(e.getModConfigurationDirectory(), ReforgedMod.NAME);
 		File configfile = new File(configdir, "integration.cfg");
 		if(!configfile.exists()) configdir.mkdirs();
@@ -34,5 +29,6 @@ public class CommonProxy {
 		
 		//Save config
 		config.save();
+		*/
 	}
 }
