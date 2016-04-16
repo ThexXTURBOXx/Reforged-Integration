@@ -13,13 +13,12 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid=ModReforgedIntegration.ID, name=ModReforgedIntegration.NAME, version=ModReforgedIntegration.VERSION, dependencies=Registry.Deps, acceptedMinecraftVersions=Registry.AcceptedVersions)
+@Mod(modid=ModReforgedIntegration.ID, name=ModReforgedIntegration.NAME, version=Global.VERSION, dependencies=Global.Deps, acceptedMinecraftVersions=Global.AcceptedVersions)
 public class ModReforgedIntegration {
 	
 	public static final String NAME = "Integration Core";
 	public static final String ID = "ReforgedIntegrationCore";
 	public static final String TABNAME = "reforgedintegration";
-	public static final String VERSION = "0.2.3-alpha";
 	
 	public static final CreativeTabs tabReforgedIntegration = new CreativeTabs(TABNAME) {
 		@Override
