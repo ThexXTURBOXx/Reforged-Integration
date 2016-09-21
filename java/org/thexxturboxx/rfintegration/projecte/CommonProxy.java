@@ -1,16 +1,9 @@
 package org.thexxturboxx.rfintegration.projecte;
 
-import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
-import org.silvercatcher.reforged.items.weapons.ItemBoomerang;
-import org.silvercatcher.reforged.items.weapons.ItemKatana;
-import org.silvercatcher.reforged.items.weapons.ItemKnife;
-import org.silvercatcher.reforged.items.weapons.ItemMusketWithBayonet;
-import org.silvercatcher.reforged.items.weapons.ItemSaber;
+import org.silvercatcher.reforged.items.weapons.*;
 import org.silvercatcher.reforged.material.MaterialDefinition;
 import org.silvercatcher.reforged.material.MaterialManager;
-import org.thexxturboxx.rfintegration.core.ProxyBase;
-import org.thexxturboxx.rfintegration.core.ReforgedIntegrationAdditions;
-import org.thexxturboxx.rfintegration.core.Registry;
+import org.thexxturboxx.rfintegration.core.*;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;

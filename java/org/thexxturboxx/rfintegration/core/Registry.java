@@ -2,7 +2,7 @@ package org.thexxturboxx.rfintegration.core;
 
 import java.util.List;
 
-import org.silvercatcher.reforged.items.ItemExtension;
+import org.silvercatcher.reforged.api.ItemExtension;
 
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.item.Item;

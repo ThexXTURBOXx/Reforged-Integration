@@ -1,25 +1,16 @@
 package org.thexxturboxx.rfintegration.thaumcraft;
 
 import org.silvercatcher.reforged.ReforgedReferences.GlobalValues;
-import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
-import org.silvercatcher.reforged.items.weapons.ItemBoomerang;
-import org.silvercatcher.reforged.items.weapons.ItemKatana;
-import org.silvercatcher.reforged.items.weapons.ItemKnife;
-import org.silvercatcher.reforged.items.weapons.ItemMusketWithBayonet;
-import org.silvercatcher.reforged.items.weapons.ItemSaber;
+import org.silvercatcher.reforged.items.weapons.*;
 import org.silvercatcher.reforged.material.MaterialDefinition;
 import org.silvercatcher.reforged.material.MaterialManager;
-import org.thexxturboxx.rfintegration.core.ProxyBase;
-import org.thexxturboxx.rfintegration.core.ReforgedIntegrationAdditions;
-import org.thexxturboxx.rfintegration.core.Registry;
+import org.thexxturboxx.rfintegration.core.*;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.*;
 import thaumcraft.api.ThaumcraftMaterials;
 import thaumcraft.api.items.ItemsTC;
 

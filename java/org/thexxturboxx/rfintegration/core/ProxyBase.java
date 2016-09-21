@@ -7,9 +7,7 @@ import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.*;
 
 public abstract class ProxyBase {
 	
