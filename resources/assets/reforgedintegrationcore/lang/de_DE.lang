@@ -29,3 +29,18 @@ item.thaumium_katana.name=Thaumiumkatana
 item.void_katana.name=Leerenmetallkatana
 item.dark_matter_katana.name=Dunkler Materiekatana
 item.red_matter_katana.name=Roter Materiekatana
+
+item.thaumium_mace.name=Thaumiumkeule
+item.void_mace.name=Leerenmetallkeule
+item.dark_matter_mace.name=Dunkle Materiekeule
+item.red_matter_mace.name=Rote Materiekeule
+
+item.thaumium_pike.name=Thaumiumpike
+item.void_pike.name=Leerenmetallpike
+item.dark_matter_pike.name=Dunkle Materiepike
+item.red_matter_pike.name=Rote Materiepike
+
+item.thaumium_dirk.name=Thaumiumdolch
+item.void_dirk.name=Leerenmetalldolch
+item.dark_matter_dirk.name=Dunkler Materiedolch
+item.red_matter_dirk.name=Roter Materiedolch

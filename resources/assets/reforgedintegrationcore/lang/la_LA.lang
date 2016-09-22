@@ -1,0 +1,46 @@
+itemGroup.reforgedintegration=Reforged Integration
+
+item.thaumium_battleaxe.name=Securis ex Thaumio
+item.void_battleaxe.name=Securis ex Voido
+item.dark_matter_battleaxe.name=Securis ex Materia Atra
+item.red_matter_battleaxe.name=Securis ex Materia Rubens
+
+item.thaumium_boomerang.name=Baculum recidens ex Thaumio
+item.void_boomerang.name=Baculum recidens ex Voido
+item.dark_matter_boomerang.name=Baculum recidens ex Materia Atra
+item.red_matter_boomerang.name=Baculum recidens ex Materia Rubens
+
+item.thaumium_saber.name=Machaera ex Thaumio
+item.void_saber.name=Machaera ex Voido
+item.dark_matter_saber.name=Machaera ex Materia Atra
+item.red_matter_saber.name=Machaera ex Materia Rubens
+
+item.thaumium_musket.name=Muska cum novacula ex Thaumio
+item.void_musket.name=Muska cum novacula ex Voido
+item.dark_matter_musket.name=Muska cum novacula Dunklem Materie
+item.red_matter_musket.name=Muska cum novacula Rotem Materie
+
+item.thaumium_knife.name=Novacula ex Thaumio
+item.void_knife.name=Novacula ex Voido
+item.dark_matter_knife.name=Novacula Dunkles Materie
+item.red_matter_knife.name=Novacula Rotes Materie
+
+item.thaumium_katana.name=Catana ex Thaumio
+item.void_katana.name=Catana ex Voido
+item.dark_matter_katana.name=Catana ex Materia Atra
+item.red_matter_katana.name=Catana ex Materia Rubens
+
+item.thaumium_mace.name=Stipes ex Thaumiokeule
+item.void_mace.name=Stipes ex Voidokeule
+item.dark_matter_mace.name=Stipes ex Materia Atrakeule
+item.red_matter_mace.name=Stipes ex Materia Rubenskeule
+
+item.thaumium_pike.name=Dolo ex Thaumio
+item.void_pike.name=Dolo ex Voido
+item.dark_matter_pike.name=Dolo ex Materia Atra
+item.red_matter_pike.name=Dolo ex Materia Rubens
+
+item.thaumium_dirk.name=Mucro ex Thaumio
+item.void_dirk.name=Mucro ex Voido
+item.dark_matter_dirk.name=Mucro ex Materia Atra
+item.red_matter_dirk.name=Mucro ex Materia Rubens

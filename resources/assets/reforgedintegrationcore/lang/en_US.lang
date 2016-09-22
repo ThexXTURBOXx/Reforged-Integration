@@ -29,3 +29,18 @@ item.thaumium_katana.name=Thaumium Katana
 item.void_katana.name=Void Katana
 item.dark_matter_katana.name=Dark Matter Katana
 item.red_matter_katana.name=Red Matter Katana
+
+item.thaumium_mace.name=Thaumium Mace
+item.void_mace.name=Void Mace
+item.dark_matter_mace.name=Dark Matter Mace
+item.red_matter_mace.name=Red Matter Mace
+
+item.thaumium_pike.name=Thaumium Pike
+item.void_pike.name=Void Pike
+item.dark_matter_pike.name=Dark Matter Pike
+item.red_matter_pike.name=Red Matter Pike
+
+item.thaumium_dirk.name=Thaumium Dirk
+item.void_dirk.name=Void Dirk
+item.dark_matter_dirk.name=Dark Matter Dirk
+item.red_matter_dirk.name=Red Matter Dirk
