@@ -45,18 +45,26 @@ public class ThaumcraftResearch {
 			"VOIDBATTLEAXE", new ItemStack(ReforgedIntegrationAdditions.VOID_BATTLE_AXE), 
 			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.FIRE, 100), "ttt", "tst", " s ", 't', new ItemStack(
 			ItemsTC.ingots, 1, 1), 's', Items.stick);
+		ShapedArcaneRecipe voidmacerecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+			"VOIDMACE", new ItemStack(ReforgedIntegrationAdditions.VOID_MACE), 
+			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.FIRE, 100), " mm", " sm", " s ", 'm', new ItemStack(
+			ItemsTC.ingots, 1, 1), 's', Items.stick);
 		new ResearchItem("VOIDBATTLEAXE", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.FIRE, 2).add(Aspect.FLUX, 2), -5, -1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			VOID_BATTLE_AXE)).setPages(new ResearchPage("tc.battleaxe"), new ResearchPage(
-			voidbattleaxerecipe)).registerResearchItem();
+			voidbattleaxerecipe), new ResearchPage(voidmacerecipe)).registerResearchItem();
 		ShapedArcaneRecipe thaumiumbattleaxerecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"THAUMIUMBATTLEAXE", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_BATTLE_AXE), 
 			new AspectList().add(Aspect.ORDER, 75).add(Aspect.ENTROPY, 75).add(Aspect.FIRE, 75), "ttt", "tst", " s ", 't', new ItemStack(
 			ItemsTC.ingots, 1, 0), 's', Items.stick);
+		ShapedArcaneRecipe thaumiummacerecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+			"THAUMIUMMACE", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_MACE), 
+			new AspectList().add(Aspect.ORDER, 75).add(Aspect.ENTROPY, 75).add(Aspect.FIRE, 75), " mm", " sm", " s ", 'm', new ItemStack(
+			ItemsTC.ingots, 1, 0), 's', Items.stick);
 		new ResearchItem("THAUMIUMBATTLEAXE", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.FIRE, 2), -5, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			THAUMIUM_BATTLE_AXE)).setPages(new ResearchPage("tc.battleaxe"), new ResearchPage(
-			thaumiumbattleaxerecipe)).registerResearchItem();
+			thaumiumbattleaxerecipe), new ResearchPage(thaumiummacerecipe)).registerResearchItem();
 		ShapedArcaneRecipe voidkatanarecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"VOIDKATANA", new ItemStack(ReforgedIntegrationAdditions.VOID_KATANA), 
 			new AspectList().add(Aspect.ORDER, 200).add(Aspect.ENTROPY, 100), "  t", " t ", "s  ", 't', new ItemStack(
@@ -77,50 +85,67 @@ public class ThaumcraftResearch {
 			"VOIDKNIFE", new ItemStack(ReforgedIntegrationAdditions.VOID_KNIFE), 
 			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 200), "st ", "   ", "   ", 't', new ItemStack(
 			ItemsTC.ingots, 1, 1), 's', Items.stick);
+		ShapedArcaneRecipe voiddirkrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+			"VOIDDIRK", new ItemStack(ReforgedIntegrationAdditions.VOID_DIRK), 
+			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 200), "t  ", "s  ", "   ", 't', new ItemStack(
+			ItemsTC.ingots, 1, 1), 's', Items.stick);
 		new ResearchItem("VOIDKNIFE", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.ENTROPY, 2).add(Aspect.FLUX, 2), 1, -1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			VOID_KNIFE)).setPages(new ResearchPage("tc.knife"), new ResearchPage(
-			voidkniferecipe)).registerResearchItem();
+			voidkniferecipe), new ResearchPage(voiddirkrecipe)).registerResearchItem();
 		ShapedArcaneRecipe thaumiumkniferecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"THAUMIUMKNIFE", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_KNIFE), 
 			new AspectList().add(Aspect.ORDER, 75).add(Aspect.ENTROPY, 150), "st ", "   ", "   ", 't', new ItemStack(
 			ItemsTC.ingots, 1, 0), 's', Items.stick);
+		ShapedArcaneRecipe thaumiumdirkrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+			"VOIDDIRK", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_DIRK), 
+			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 200), "t  ", "s  ", "   ", 't', new ItemStack(
+			ItemsTC.ingots, 1, 0), 's', Items.stick);
 		new ResearchItem("THAUMIUMKNIFE", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.ENTROPY, 2), 1, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			THAUMIUM_KNIFE)).setPages(new ResearchPage("tc.knife"), new ResearchPage(
-			thaumiumkniferecipe)).registerResearchItem();
+			thaumiumkniferecipe), new ResearchPage(thaumiumdirkrecipe)).registerResearchItem();
 		if(GlobalValues.MUSKET) {
-		ShapedArcaneRecipe voidmusketrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
-			"VOIDMUSKET", new ItemStack(ReforgedIntegrationAdditions.VOID_MUSKET), 
-			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.EARTH, 100), "mk ", "   ", "   ", 'm',
-			ReforgedAdditions.MUSKET, 'k', ReforgedIntegrationAdditions.VOID_KNIFE);
-		new ResearchItem("VOIDMUSKET", ReforgedMod.ID.toUpperCase(), new AspectList().add(
-			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.EARTH, 2).add(Aspect.FLUX, 2), 3, -1, 2, new ItemStack(ReforgedIntegrationAdditions.
-			VOID_MUSKET)).setPages(new ResearchPage("tc.musket"), new ResearchPage(
-			voidmusketrecipe)).registerResearchItem();
-		ShapedArcaneRecipe thaumiummusketrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
-			"THAUMIUMMUSKET", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_MUSKET), 
-			new AspectList().add(Aspect.ORDER, 75).add(Aspect.ENTROPY, 75).add(Aspect.EARTH, 75), "mk ", "   ", "   ", 'm',
-			ReforgedAdditions.MUSKET, 'k', ReforgedIntegrationAdditions.THAUMIUM_KNIFE);
-		new ResearchItem("THAUMIUMMUSKET", ReforgedMod.ID.toUpperCase(), new AspectList().add(
-			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.EARTH, 2), 3, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
-			THAUMIUM_MUSKET)).setPages(new ResearchPage("tc.musket"), new ResearchPage(
-			thaumiummusketrecipe)).registerResearchItem();}
+			ShapedArcaneRecipe voidmusketrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+				"VOIDMUSKET", new ItemStack(ReforgedIntegrationAdditions.VOID_MUSKET), 
+				new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.EARTH, 100), "mk ", "   ", "   ", 'm',
+				ReforgedAdditions.MUSKET, 'k', ReforgedIntegrationAdditions.VOID_KNIFE);
+			new ResearchItem("VOIDMUSKET", ReforgedMod.ID.toUpperCase(), new AspectList().add(
+				FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.EARTH, 2).add(Aspect.FLUX, 2), 3, -1, 2, new ItemStack(ReforgedIntegrationAdditions.
+				VOID_MUSKET)).setPages(new ResearchPage("tc.musket"), new ResearchPage(
+				voidmusketrecipe)).registerResearchItem();
+			ShapedArcaneRecipe thaumiummusketrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+				"THAUMIUMMUSKET", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_MUSKET), 
+				new AspectList().add(Aspect.ORDER, 75).add(Aspect.ENTROPY, 75).add(Aspect.EARTH, 75), "mk ", "   ", "   ", 'm',
+				ReforgedAdditions.MUSKET, 'k', ReforgedIntegrationAdditions.THAUMIUM_KNIFE);
+			new ResearchItem("THAUMIUMMUSKET", ReforgedMod.ID.toUpperCase(), new AspectList().add(
+				FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.EARTH, 2), 3, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
+				THAUMIUM_MUSKET)).setPages(new ResearchPage("tc.musket"), new ResearchPage(
+				thaumiummusketrecipe)).registerResearchItem();
+		}
 		ShapedArcaneRecipe voidsaberrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"VOIDSABER", new ItemStack(ReforgedIntegrationAdditions.VOID_SABER), 
 			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.WATER, 100), " t ", "t  ", "s  ", 't', new ItemStack(
 			ItemsTC.ingots, 1, 1), 's', Items.stick);
+		ShapedArcaneRecipe voidpikerecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+			"VOIDPIKE", new ItemStack(ReforgedIntegrationAdditions.VOID_PIKE), 
+			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.WATER, 100), "s  ", " s ", "  m", 'm', new ItemStack(
+			ItemsTC.ingots, 1, 1), 's', Items.stick);
 		new ResearchItem("VOIDSABER", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.WATER, 2).add(Aspect.FLUX, 2), 5, -1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			VOID_SABER)).setPages(new ResearchPage("tc.saber"), new ResearchPage(
-			voidsaberrecipe)).registerResearchItem();
+			voidsaberrecipe), new ResearchPage(voidpikerecipe)).registerResearchItem();
 		ShapedArcaneRecipe thaumiumsaberrecipe = ThaumcraftApi.addArcaneCraftingRecipe(
 			"THAUMIUMSABER", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_SABER), 
 			new AspectList().add(Aspect.ORDER, 75).add(Aspect.ENTROPY, 75).add(Aspect.WATER, 75), " t ", "t  ", "s  ", 't', new ItemStack(
 			ItemsTC.ingots, 1, 0), 's', Items.stick);
+		ShapedArcaneRecipe thaumiumpikerecipe = ThaumcraftApi.addArcaneCraftingRecipe(
+			"THAUMIUMPIKE", new ItemStack(ReforgedIntegrationAdditions.THAUMIUM_PIKE), 
+			new AspectList().add(Aspect.ORDER, 100).add(Aspect.ENTROPY, 100).add(Aspect.WATER, 100), "s  ", " s ", "  m", 'm', new ItemStack(
+			ItemsTC.ingots, 1, 0), 's', Items.stick);
 		new ResearchItem("THAUMIUMSABER", ReforgedMod.ID.toUpperCase(), new AspectList().add(
 			FORGING, 2).add(Aspect.DARKNESS, 2).add(Aspect.ORDER, 2).add(Aspect.WATER, 2), 5, 1, 2, new ItemStack(ReforgedIntegrationAdditions.
 			THAUMIUM_SABER)).setPages(new ResearchPage("tc.saber"), new ResearchPage(
-			thaumiumsaberrecipe)).registerResearchItem();
+			thaumiumsaberrecipe), new ResearchPage(thaumiumpikerecipe)).registerResearchItem();
 	}
 }

@@ -44,6 +44,9 @@ public class CommonProxy extends ProxyBase {
 		simpleReg(ReforgedIntegrationAdditions.DM_BOOMERANG = new ItemBoomerang(ProjectE_DarkMatter, true));
 		simpleReg(ReforgedIntegrationAdditions.DM_SABER = new ItemSaber(ProjectE_DarkMatter, true));
 		simpleReg(ReforgedIntegrationAdditions.DM_KATANA = new ItemKatana(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_PIKE = new ItemPike(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_MACE = new ItemMace(ProjectE_DarkMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.DM_DIRK = new ItemDirk(ProjectE_DarkMatter, true));
 		simpleReg(ReforgedIntegrationAdditions.RM_KNIFE = new ItemKnife(ProjectE_RedMatter, true));
 		ResourceLocation[] rs_rm = new ResourceLocation[]{ReforgedIntegrationAdditions.RM_BOOMERANG_TEX};
 		Item[] i_rm = new Item[]{ReforgedIntegrationAdditions.RM_KNIFE};
@@ -53,6 +56,9 @@ public class CommonProxy extends ProxyBase {
 		simpleReg(ReforgedIntegrationAdditions.RM_BOOMERANG = new ItemBoomerang(ProjectE_RedMatter, true));
 		simpleReg(ReforgedIntegrationAdditions.RM_SABER = new ItemSaber(ProjectE_RedMatter, true));
 		simpleReg(ReforgedIntegrationAdditions.RM_KATANA = new ItemKatana(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_PIKE = new ItemPike(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_MACE = new ItemMace(ProjectE_RedMatter, true));
+		simpleReg(ReforgedIntegrationAdditions.RM_DIRK = new ItemDirk(ProjectE_RedMatter, true));
 	}
 	
 	@Override

@@ -40,6 +40,9 @@ public class CommonProxy extends ProxyBase {
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_BOOMERANG = new ItemBoomerang(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_SABER = new ItemSaber(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_KATANA = new ItemKatana(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
+		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_PIKE = new ItemPike(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
+		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_MACE = new ItemMace(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
+		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_DIRK = new ItemDirk(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.VOID_KNIFE = new ItemKnife(ThaumcraftMaterials.TOOLMAT_VOID));
 		ResourceLocation[] rs_void = new ResourceLocation[]{ReforgedIntegrationAdditions.VOID_BOOMERANG_TEX};
 		Item[] i_void = new Item[]{ReforgedIntegrationAdditions.VOID_KNIFE};
@@ -49,6 +52,9 @@ public class CommonProxy extends ProxyBase {
 		simpleReg(ReforgedIntegrationAdditions.VOID_BOOMERANG = new ItemBoomerang(ThaumcraftMaterials.TOOLMAT_VOID));
 		simpleReg(ReforgedIntegrationAdditions.VOID_SABER = new ItemSaber(ThaumcraftMaterials.TOOLMAT_VOID));
 		simpleReg(ReforgedIntegrationAdditions.VOID_KATANA = new ItemKatana(ThaumcraftMaterials.TOOLMAT_VOID));
+		simpleReg(ReforgedIntegrationAdditions.VOID_PIKE = new ItemPike(ThaumcraftMaterials.TOOLMAT_VOID));
+		simpleReg(ReforgedIntegrationAdditions.VOID_MACE = new ItemMace(ThaumcraftMaterials.TOOLMAT_VOID));
+		simpleReg(ReforgedIntegrationAdditions.VOID_DIRK = new ItemDirk(ThaumcraftMaterials.TOOLMAT_VOID));
 	}
 	
 	@Override

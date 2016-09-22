@@ -14,6 +14,9 @@ public class ReforgedIntegrationAdditions {
 	public static Item THAUMIUM_SABER;
 	public static Item THAUMIUM_KATANA;
 	public static Item THAUMIUM_KNIFE;
+	public static Item THAUMIUM_PIKE;
+	public static Item THAUMIUM_MACE;
+	public static Item THAUMIUM_DIRK;
 	
 	//Thaumcraft: Void
 	public static Item VOID_MUSKET;
@@ -22,6 +25,9 @@ public class ReforgedIntegrationAdditions {
 	public static Item VOID_SABER;
 	public static Item VOID_KATANA;
 	public static Item VOID_KNIFE;
+	public static Item VOID_PIKE;
+	public static Item VOID_MACE;
+	public static Item VOID_DIRK;
 	
 	//ProjectE: Dark Matter
 	public static Item DM_MUSKET;
@@ -30,6 +36,9 @@ public class ReforgedIntegrationAdditions {
 	public static Item DM_SABER;
 	public static Item DM_KATANA;
 	public static Item DM_KNIFE;
+	public static Item DM_PIKE;
+	public static Item DM_MACE;
+	public static Item DM_DIRK;
 
 	//ProjectE: Red Matter
 	public static Item RM_MUSKET;
@@ -38,6 +47,9 @@ public class ReforgedIntegrationAdditions {
 	public static Item RM_SABER;
 	public static Item RM_KATANA;
 	public static Item RM_KNIFE;
+	public static Item RM_PIKE;
+	public static Item RM_MACE;
+	public static Item RM_DIRK;
 	
 	//ResourceLocations
 	public static final ResourceLocation THAUMIUM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/thaumium_boomerang.png");
