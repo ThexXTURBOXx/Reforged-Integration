@@ -42,6 +42,10 @@ public class NestOfBeesRecipeHandler implements IRecipeHandler<NestOfBeesLoadRec
 		int nob = (int) getField(recipe, "NoB");
 		ItemStack nobIn = inputr[nob];
 		ItemStack nobOut = (ItemStack) getField(recipe, "output");
+		for(ItemStack i : inputr) {
+			System.out.println(i.stackSize + "x " + i.getItem().getUnlocalizedName());
+		}
+		System.out.println("R: " + nobOut.stackSize + "x " + nobOut.getItem().getUnlocalizedName());
 		cache.add(arrowBundle);
 		cache.add(nobIn);
 		input.add(cache);
@@ -63,7 +67,8 @@ public class NestOfBeesRecipeHandler implements IRecipeHandler<NestOfBeesLoadRec
 	
 	@Override
 	public boolean isRecipeValid(NestOfBeesLoadRecipe recipe) {
-		return GlobalValues.NEST_OF_BEES;
+		return GlobalValues.NEST_OF_BEES && getField(recipe, "input") != null &&
+				getField(recipe, "output") != null;
 	}
 	
 }

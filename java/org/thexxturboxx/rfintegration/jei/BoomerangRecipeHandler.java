@@ -34,7 +34,7 @@ public class BoomerangRecipeHandler implements IRecipeHandler<BoomerangEnchRecip
 		ItemStack[] inputr = (ItemStack[]) getField(recipe, "input");
 		ItemStack outputr = (ItemStack) getField(recipe, "output");
 		for(ItemStack is : inputr) {
-			cache.add(is.splitStack(1));
+			if(is != null) cache.add(is.splitStack(1));
 		}
 		input.add(cache);
 		output.add(outputr);
@@ -55,7 +55,8 @@ public class BoomerangRecipeHandler implements IRecipeHandler<BoomerangEnchRecip
 	
 	@Override
 	public boolean isRecipeValid(BoomerangEnchRecipe recipe) {
-		return GlobalValues.BOOMERANG;
+		return GlobalValues.BOOMERANG && getField(recipe, "input") != null &&
+				getField(recipe, "output") != null;
 	}
 	
 }
