@@ -8,7 +8,7 @@ public class Global {
 	*/
 	
 	/**All the Dependencies for our mod*/
-	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE";
+	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE;after:Botania";
 	
 	/**All the Dependencies for the child mods*/
 	public static final String ChildDeps = "required-after:reforged;required-after:ReforgedIntegrationCore";
@@ -17,5 +17,5 @@ public class Global {
 	public static final String AcceptedVersions = "[1.8, 1.8.9]";
 	
 	/**The version of the mods*/
-	public static final String VERSION = "0.2.4-alpha";
+	public static final String VERSION = "0.3-alpha";
 }

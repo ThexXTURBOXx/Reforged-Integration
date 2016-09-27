@@ -43,6 +43,7 @@ public class CommonProxy extends ProxyBase {
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_PIKE = new ItemPike(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_MACE = new ItemMace(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
 		simpleReg(ReforgedIntegrationAdditions.THAUMIUM_DIRK = new ItemDirk(ThaumcraftMaterials.TOOLMAT_THAUMIUM));
+		
 		simpleReg(ReforgedIntegrationAdditions.VOID_KNIFE = new ItemKnife(ThaumcraftMaterials.TOOLMAT_VOID));
 		ResourceLocation[] rs_void = new ResourceLocation[]{ReforgedIntegrationAdditions.VOID_BOOMERANG_TEX};
 		Item[] i_void = new Item[]{ReforgedIntegrationAdditions.VOID_KNIFE};

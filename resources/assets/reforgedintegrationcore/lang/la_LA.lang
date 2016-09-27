@@ -17,23 +17,23 @@ item.red_matter_saber.name=Machaera ex Materia Rubens
 
 item.thaumium_musket.name=Muska cum novacula ex Thaumio
 item.void_musket.name=Muska cum novacula ex Voido
-item.dark_matter_musket.name=Muska cum novacula Dunklem Materie
-item.red_matter_musket.name=Muska cum novacula Rotem Materie
+item.dark_matter_musket.name=Muska cum novacula ex Materia Atra
+item.red_matter_musket.name=Muska cum novacula ex Materia Rubens
 
 item.thaumium_knife.name=Novacula ex Thaumio
 item.void_knife.name=Novacula ex Voido
-item.dark_matter_knife.name=Novacula Dunkles Materie
-item.red_matter_knife.name=Novacula Rotes Materie
+item.dark_matter_knife.name=Novacula ex Materia Atra
+item.red_matter_knife.name=Novacula ex Materia Rubens
 
 item.thaumium_katana.name=Catana ex Thaumio
 item.void_katana.name=Catana ex Voido
 item.dark_matter_katana.name=Catana ex Materia Atra
 item.red_matter_katana.name=Catana ex Materia Rubens
 
-item.thaumium_mace.name=Stipes ex Thaumiokeule
-item.void_mace.name=Stipes ex Voidokeule
-item.dark_matter_mace.name=Stipes ex Materia Atrakeule
-item.red_matter_mace.name=Stipes ex Materia Rubenskeule
+item.thaumium_mace.name=Stipes ex Thaumio
+item.void_mace.name=Stipes ex Voido
+item.dark_matter_mace.name=Stipes ex Materia Atra
+item.red_matter_mace.name=Stipes ex Materia Rubens
 
 item.thaumium_pike.name=Dolo ex Thaumio
 item.void_pike.name=Dolo ex Voido

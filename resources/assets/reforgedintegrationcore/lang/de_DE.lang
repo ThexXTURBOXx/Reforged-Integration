@@ -4,43 +4,70 @@ item.thaumium_battleaxe.name=Thaumiumstreitaxt
 item.void_battleaxe.name=Leerenmetallstreitaxt
 item.dark_matter_battleaxe.name=Dunkle Materiestreitaxt
 item.red_matter_battleaxe.name=Rote Materiestreitaxt
+item.manasteel_battleaxe.name=Manastahlstreitaxt
+item.elementium_battleaxe.name=Elementiumstreitaxt
+item.terrasteel_battleaxe.name=Terrastahlstreitaxt
 
 item.thaumium_boomerang.name=Thaumiumbumerang
 item.void_boomerang.name=Leerenmetallbumerang
 item.dark_matter_boomerang.name=Dunkler Materiebumerang
 item.red_matter_boomerang.name=Roter Materiebumerang
+item.manasteel_boomerang.name=Manastahlbumerang
+item.elementium_boomerang.name=Elementiumbumerang
+item.terrasteel_boomerang.name=Terrastahlbumerang
 
 item.thaumium_saber.name=Thaumiumsäbel
 item.void_saber.name=Leerenmetallsäbel
 item.dark_matter_saber.name=Dunkler Materiesäbel
 item.red_matter_saber.name=Roter Materiesäbel
+item.manasteel_saber.name=Manastahlsäbel
+item.elementium_saber.name=Elementiumsäbel
+item.terrasteel_saber.name=Terrastahlsäbel
 
 item.thaumium_musket.name=Muskete mit Thaumiumbajonett
 item.void_musket.name=Muskete mit Leerenmetallbajonett
 item.dark_matter_musket.name=Muskete mit Dunklem Materiebajonett
 item.red_matter_musket.name=Muskete mit Rotem Materiebajonett
+item.manasteel_musket.name=Muskete mit Manastahlbajonett
+item.elementium_musket.name=Muskete mit Elementiumbajonett
+item.terrasteel_musket.name=Muskete mit Terrastahlbajonett
 
 item.thaumium_knife.name=Thaumiummesser
 item.void_knife.name=Leerenmetallmesser
 item.dark_matter_knife.name=Dunkles Materiemesser
 item.red_matter_knife.name=Rotes Materiemesser
+item.manasteel_knife.name=Manastahlmesser
+item.elementium_knife.name=Elementiummesser
+item.terrasteel_knife.name=Terrastahlmesser
 
 item.thaumium_katana.name=Thaumiumkatana
 item.void_katana.name=Leerenmetallkatana
 item.dark_matter_katana.name=Dunkler Materiekatana
 item.red_matter_katana.name=Roter Materiekatana
+item.manasteel_katana.name=Manastahlkatana
+item.elementium_katana.name=Elementiumkatana
+item.terrasteel_katana.name=Terrastahlkatana
 
 item.thaumium_mace.name=Thaumiumkeule
 item.void_mace.name=Leerenmetallkeule
 item.dark_matter_mace.name=Dunkle Materiekeule
 item.red_matter_mace.name=Rote Materiekeule
+item.manasteel_mace.name=Manastahlkeule
+item.elementium_mace.name=Elementiumkeule
+item.terrasteel_mace.name=Terrastahlkeule
 
 item.thaumium_pike.name=Thaumiumpike
 item.void_pike.name=Leerenmetallpike
 item.dark_matter_pike.name=Dunkle Materiepike
 item.red_matter_pike.name=Rote Materiepike
+item.manasteel_pike.name=Manastahlpike
+item.elementium_pike.name=Elementiumpike
+item.terrasteel_pike.name=Terrastahlpike
 
 item.thaumium_dirk.name=Thaumiumdolch
 item.void_dirk.name=Leerenmetalldolch
 item.dark_matter_dirk.name=Dunkler Materiedolch
 item.red_matter_dirk.name=Roter Materiedolch
+item.manasteel_dirk.name=Manastahldolch
+item.elementium_dirk.name=Elementiumdolch
+item.terrasteel_dirk.name=Terrastahldolch

@@ -39,7 +39,7 @@ public class ReforgedIntegrationAdditions {
 	public static Item DM_PIKE;
 	public static Item DM_MACE;
 	public static Item DM_DIRK;
-
+	
 	//ProjectE: Red Matter
 	public static Item RM_MUSKET;
 	public static Item RM_BATTLE_AXE;
@@ -51,10 +51,46 @@ public class ReforgedIntegrationAdditions {
 	public static Item RM_MACE;
 	public static Item RM_DIRK;
 	
+	//Botania: Manasteel
+	public static Item MANASTEEL_MUSKET;
+	public static Item MANASTEEL_BATTLE_AXE;
+	public static Item MANASTEEL_BOOMERANG;
+	public static Item MANASTEEL_SABER;
+	public static Item MANASTEEL_KATANA;
+	public static Item MANASTEEL_KNIFE;
+	public static Item MANASTEEL_PIKE;
+	public static Item MANASTEEL_MACE;
+	public static Item MANASTEEL_DIRK;
+	
+	//Botania: Elementium
+	public static Item ELEMENTIUM_MUSKET;
+	public static Item ELEMENTIUM_BATTLE_AXE;
+	public static Item ELEMENTIUM_BOOMERANG;
+	public static Item ELEMENTIUM_SABER;
+	public static Item ELEMENTIUM_KATANA;
+	public static Item ELEMENTIUM_KNIFE;
+	public static Item ELEMENTIUM_PIKE;
+	public static Item ELEMENTIUM_MACE;
+	public static Item ELEMENTIUM_DIRK;
+	
+	//Botania: Terrasteel
+	public static Item TERRASTEEL_MUSKET;
+	public static Item TERRASTEEL_BATTLE_AXE;
+	public static Item TERRASTEEL_BOOMERANG;
+	public static Item TERRASTEEL_SABER;
+	public static Item TERRASTEEL_KATANA;
+	public static Item TERRASTEEL_KNIFE;
+	public static Item TERRASTEEL_PIKE;
+	public static Item TERRASTEEL_MACE;
+	public static Item TERRASTEEL_DIRK;
+	
 	//ResourceLocations
 	public static final ResourceLocation THAUMIUM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/thaumium_boomerang.png");
 	public static final ResourceLocation VOID_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/void_boomerang.png");
 	public static final ResourceLocation DM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/dark_matter_boomerang.png");
 	public static final ResourceLocation RM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/red_matter_boomerang.png");
+	public static final ResourceLocation MANASTEEL_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/manasteel_boomerang.png");
+	public static final ResourceLocation ELEMENTIUM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/elementium_boomerang.png");
+	public static final ResourceLocation TERRASTEEL_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/terrasteel_boomerang.png");
 	public static final ResourceLocation FORGING_ICON = new ResourceLocation("reforgedthaumcraft:textures/research/forging_aspect.png");
 }
