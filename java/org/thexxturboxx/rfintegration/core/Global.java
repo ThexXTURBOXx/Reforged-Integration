@@ -8,7 +8,7 @@ public class Global {
 	*/
 	
 	/**All the Dependencies for our mod*/
-	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE;after:Botania";
+	public static final String Deps = "required-after:reforged;after:Baubles;after:Thaumcraft;after:ProjectE;after:Botania;after:JEI";
 	
 	/**All the Dependencies for the child mods*/
 	public static final String ChildDeps = "required-after:reforged;required-after:ReforgedIntegrationCore";

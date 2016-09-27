@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.silvercatcher.reforged.items.weapons.ItemBattleAxe;
+import org.silvercatcher.reforged.items.weapons.ItemBoomerang;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Loader;
@@ -17,9 +18,12 @@ public abstract class ProxyBase {
 	
 	/**Saves all the items of the Integration APIs*/
 	protected List<Item> regListItems = new ArrayList<Item>();
-	
+
 	/**Saves all possible items for the Creative Tab Icon*/
 	public static List<ItemBattleAxe> battleaxeList = new ArrayList<ItemBattleAxe>();
+	
+	/**Saves all Boomerangs*/
+	public static List<ItemBoomerang> boomerangList = new ArrayList<ItemBoomerang>();
 	
 	/**Saves the name of the mod, that needs to get integrated*/
 	String modName;
@@ -48,6 +52,7 @@ public abstract class ProxyBase {
 	protected void simpleReg(Item item) {
 		regListItems.add(item.setCreativeTab(ModReforgedIntegration.tabReforgedIntegration));
 		if(item instanceof ItemBattleAxe) battleaxeList.add((ItemBattleAxe) item);
+		if(item instanceof ItemBoomerang) boomerangList.add((ItemBoomerang) item);
 	}
 	
 	public void preInit(FMLPreInitializationEvent e) {
