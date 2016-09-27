@@ -4,6 +4,7 @@ tc.aspect.forging=Death, Weapons
 
 tc.battleaxe=The Battleaxe can be used to chop trees faster and it has pretty high damage compared to other weapons.
 tc.boomerang=The Boomerang is a good choice, if you want a throwing weapon, which comes back. Have fun with that ^^
+tc.general=Learn the ability to create mighty weapons out of magic material!
 tc.katana=The Katana does more damage to armored mobs. Be like a ninja!
 tc.knife=Stab the enemies in the back. You will do much more damage then.
 tc.musket=You can shoot with the Musket and do good melee damage with his integrated Knife.
@@ -20,6 +21,9 @@ tc.research_text.VOIDBOOMERANG=Never gonna give you up...
 
 tc.research_name.THAUMIUMBOOMERANG=Thaumium Boomerang
 tc.research_text.THAUMIUMBOOMERANG=Boomerangship is magic <3
+
+tc.research_name.REFORGEDGENERAL=Reforged | Thaumcraft
+tc.research_text.REFORGEDGENERAL=Yeah, this is cool!
 
 tc.research_name.VOIDKATANA=Void Katana
 tc.research_text.VOIDKATANA=Silent and deadly
