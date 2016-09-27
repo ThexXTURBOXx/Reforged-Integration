@@ -23,8 +23,6 @@ public class ReforgedPlugin implements mezz.jei.api.IModPlugin {
 		if(!Loader.isModLoaded(modId) || !Loader.isModLoaded("JEI") || helper == null) {
 			return;
 		}
-		ReforgedCategories rc = new ReforgedCategories() {};
-		registry.addRecipeCategories(rc.new BoomerangCategory(helper), rc.new NoBCategory(helper));
 		registry.addRecipeHandlers(new BoomerangRecipeHandler(), new NestOfBeesRecipeHandler());
 	}
 	

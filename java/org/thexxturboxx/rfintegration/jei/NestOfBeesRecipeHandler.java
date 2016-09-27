@@ -1,19 +1,16 @@
 package org.thexxturboxx.rfintegration.jei;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.reflect.Field;
+import java.util.*;
 
 import javax.annotation.Nonnull;
 
 import org.silvercatcher.reforged.ReforgedReferences.GlobalValues;
-import org.silvercatcher.reforged.api.CompoundTags;
 import org.silvercatcher.reforged.api.ReforgedAdditions;
 import org.silvercatcher.reforged.items.recipes.NestOfBeesLoadRecipe;
 
-import mezz.jei.api.recipe.IRecipeHandler;
-import mezz.jei.api.recipe.IRecipeWrapper;
+import mezz.jei.api.recipe.*;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 
 public class NestOfBeesRecipeHandler implements IRecipeHandler<NestOfBeesLoadRecipe> {
 	
@@ -26,27 +23,42 @@ public class NestOfBeesRecipeHandler implements IRecipeHandler<NestOfBeesLoadRec
 	@Nonnull
 	@Override
 	public String getRecipeCategoryUid() {
-		return "Nest of Bees Reloading (Shapeless)";
+		return VanillaRecipeCategoryUid.CRAFTING;
 	}
 	
 	@Override
 	public IRecipeWrapper getRecipeWrapper(NestOfBeesLoadRecipe recipe) {
 		List<List<ItemStack>> input = new ArrayList<List<ItemStack>>();
 		List<ItemStack> output = new ArrayList<ItemStack>();
-		for(int i = 0; i <= 3; i++) {
-			for(int j = 1; j <= i - 2; j++) {
-				List<ItemStack> cache = new ArrayList<ItemStack>();
-				ItemStack arrowBundle = new ItemStack(ReforgedAdditions.ARROW_BUNDLE, j);
-				ItemStack nobIn = new ItemStack(ReforgedAdditions.NEST_OF_BEES);
-				NBTTagCompound cpdIn = CompoundTags.giveCompound(nobIn);
-				cpdIn.setInteger(CompoundTags.AMMUNITION, (i * 8));
-				ItemStack nobOut = nobIn.copy();
-				NBTTagCompound cpdOut = CompoundTags.giveCompound(nobOut);
-				cpdOut.setInteger(CompoundTags.AMMUNITION,
-						cpdOut.getInteger(CompoundTags.AMMUNITION) + (j * 8));
-			}
+		List<ItemStack> cache = new ArrayList<ItemStack>();
+		HashMap<Integer, Integer> aBs = (HashMap<Integer, Integer>) getField(recipe, "usedaBs");
+		int count = 0;
+		for(int i : aBs.keySet()) {
+			count += aBs.get(i);
 		}
+		ItemStack arrowBundle = new ItemStack(ReforgedAdditions.ARROW_BUNDLE,
+				count);
+		ItemStack[] inputr = (ItemStack[]) getField(recipe, "input");
+		int nob = (int) getField(recipe, "NoB");
+		ItemStack nobIn = inputr[nob];
+		ItemStack nobOut = (ItemStack) getField(recipe, "output");
+		cache.add(arrowBundle);
+		cache.add(nobIn);
+		input.add(cache);
+		output.add(nobOut);
 		return new ReforgedRecipeWrapper(input, output);
+	}
+	
+	private Object getField(NestOfBeesLoadRecipe instance, String name) {
+		Object obj = null;
+		try {
+			Field f = instance.getClass().getDeclaredField(name);
+			f.setAccessible(true);
+			obj = f.get(instance);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return obj;
 	}
 	
 	@Override
