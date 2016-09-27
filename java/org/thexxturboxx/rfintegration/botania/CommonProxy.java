@@ -1,6 +1,5 @@
 package org.thexxturboxx.rfintegration.botania;
 
-import org.silvercatcher.reforged.items.weapons.*;
 import org.silvercatcher.reforged.material.MaterialDefinition;
 import org.silvercatcher.reforged.material.MaterialManager;
 import org.thexxturboxx.rfintegration.core.*;
@@ -30,44 +29,45 @@ public class CommonProxy extends ProxyBase {
 	@Override
 	public void registerItems() {
 		super.registerItems();
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_KNIFE = new ItemKnife(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
+		ManaItems mi = new ManaItems() {};
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_KNIFE = mi.new ManaKnife(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
 		ResourceLocation[] rs_ms = new ResourceLocation[]{ReforgedIntegrationAdditions.MANASTEEL_BOOMERANG_TEX};
 		Item[] i_ms = new Item[]{ReforgedIntegrationAdditions.MANASTEEL_KNIFE};
 		MaterialManager.addOthers(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, rs_ms, i_ms);
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_MUSKET = new ItemMusketWithBayonet(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_BATTLE_AXE = new ItemBattleAxe(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_BOOMERANG = new ItemBoomerang(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_SABER = new ItemSaber(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_KATANA = new ItemKatana(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_PIKE = new ItemPike(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_MACE = new ItemMace(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_DIRK = new ItemDirk(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial, false));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_MUSKET = mi.new ManaMusket(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_BATTLE_AXE = mi.new ManaBattleAxe(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_BOOMERANG = mi.new ManaBoomerang(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_SABER = mi.new ManaSaber(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_KATANA = mi.new ManaKatana(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_PIKE = mi.new ManaPike(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_MACE = mi.new ManaMace(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.MANASTEEL_DIRK = mi.new ManaDirk(vazkii.botania.api.BotaniaAPI.manasteelToolMaterial));
 		
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_KNIFE = new ItemKnife(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_KNIFE = mi.new ManaKnife(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
 		ResourceLocation[] rs_el = new ResourceLocation[]{ReforgedIntegrationAdditions.ELEMENTIUM_BOOMERANG_TEX};
 		Item[] i_el = new Item[]{ReforgedIntegrationAdditions.ELEMENTIUM_KNIFE};
 		MaterialManager.addOthers(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, rs_el, i_el);
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_MUSKET = new ItemMusketWithBayonet(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_BATTLE_AXE = new ItemBattleAxe(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_BOOMERANG = new ItemBoomerang(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_SABER = new ItemSaber(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_KATANA = new ItemKatana(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_PIKE = new ItemPike(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_MACE = new ItemMace(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_DIRK = new ItemDirk(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial, false));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_MUSKET = mi.new ManaMusket(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_BATTLE_AXE = mi.new ManaBattleAxe(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_BOOMERANG = mi.new ManaBoomerang(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_SABER = mi.new ManaSaber(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_KATANA = mi.new ManaKatana(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_PIKE = mi.new ManaPike(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_MACE = mi.new ManaMace(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.ELEMENTIUM_DIRK = mi.new ManaDirk(vazkii.botania.api.BotaniaAPI.elementiumToolMaterial));
 		
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_KNIFE = new ItemKnife(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_KNIFE = mi.new ManaKnife(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
 		ResourceLocation[] rs_ts = new ResourceLocation[]{ReforgedIntegrationAdditions.TERRASTEEL_BOOMERANG_TEX};
 		Item[] i_ts = new Item[]{ReforgedIntegrationAdditions.TERRASTEEL_KNIFE};
 		MaterialManager.addOthers(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, rs_ts, i_ts);
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_MUSKET = new ItemMusketWithBayonet(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_BATTLE_AXE = new ItemBattleAxe(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_BOOMERANG = new ItemBoomerang(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_SABER = new ItemSaber(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_KATANA = new ItemKatana(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_PIKE = new ItemPike(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_MACE = new ItemMace(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
-		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_DIRK = new ItemDirk(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial, false));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_MUSKET = mi.new ManaMusket(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_BATTLE_AXE = mi.new ManaBattleAxe(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_BOOMERANG = mi.new ManaBoomerang(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_SABER = mi.new ManaSaber(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_KATANA = mi.new ManaKatana(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_PIKE = mi.new ManaPike(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_MACE = mi.new ManaMace(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
+		simpleReg(ReforgedIntegrationAdditions.TERRASTEEL_DIRK = mi.new ManaDirk(vazkii.botania.api.BotaniaAPI.terrasteelToolMaterial));
 	}
 	
 	@Override
