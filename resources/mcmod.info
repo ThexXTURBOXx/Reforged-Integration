@@ -58,5 +58,20 @@
   "parent": "reforged",
   "screenshots": [],
   "dependencies": []
+},
+{
+  "modid": "ReforgedBoP",
+  "name": "Reforged|Integration BoP",
+  "version": "${version}",
+  "mcversion": ["1.8", "1.8.9"],
+  "description": "Adds integration for other mods (Biomes O' Plenty)",
+  "credits": "Snow_Yoshi98, baddaspig and Sunconure11 for textures",
+  "logoFile": "/assets/reforged/textures/others/logo.png",
+  "url": "https://github.com/ThexXTURBOXx/Reforged-Integration",
+  "updateUrl": "http://minecraft.curseforge.com/projects/reforged-integration/files",
+  "authorList": [ "ThexXTURBOXx", "Silvercatcher" ],
+  "parent": "reforged",
+  "screenshots": [],
+  "dependencies": []
 }
 ]

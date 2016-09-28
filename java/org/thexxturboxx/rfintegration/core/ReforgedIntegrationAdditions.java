@@ -84,6 +84,17 @@ public class ReforgedIntegrationAdditions {
 	public static Item TERRASTEEL_MACE;
 	public static Item TERRASTEEL_DIRK;
 	
+	//BoP: Amethyst
+	public static Item AMETHYST_MUSKET;
+	public static Item AMETHYST_BATTLE_AXE;
+	public static Item AMETHYST_BOOMERANG;
+	public static Item AMETHYST_SABER;
+	public static Item AMETHYST_KATANA;
+	public static Item AMETHYST_KNIFE;
+	public static Item AMETHYST_PIKE;
+	public static Item AMETHYST_MACE;
+	public static Item AMETHYST_DIRK;
+	
 	//ResourceLocations
 	public static final ResourceLocation THAUMIUM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/thaumium_boomerang.png");
 	public static final ResourceLocation VOID_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/void_boomerang.png");
@@ -92,5 +103,6 @@ public class ReforgedIntegrationAdditions {
 	public static final ResourceLocation MANASTEEL_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/manasteel_boomerang.png");
 	public static final ResourceLocation ELEMENTIUM_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/elementium_boomerang.png");
 	public static final ResourceLocation TERRASTEEL_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/terrasteel_boomerang.png");
+	public static final ResourceLocation AMETHYST_BOOMERANG_TEX = new ResourceLocation("reforgedintegrationcore:textures/entity/amethyst_boomerang.png");
 	public static final ResourceLocation FORGING_ICON = new ResourceLocation("reforgedthaumcraft:textures/research/forging_aspect.png");
 }

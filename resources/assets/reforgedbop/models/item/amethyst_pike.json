@@ -1,0 +1,7 @@
+{
+    "parent": "reforged:item/pike",
+
+    "textures": {
+        "layer0": "reforgedintegrationcore:items/pike_amethyst"
+    }
+}
