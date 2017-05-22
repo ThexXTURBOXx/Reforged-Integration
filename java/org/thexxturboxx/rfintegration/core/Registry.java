@@ -4,10 +4,9 @@ import java.util.List;
 
 import org.silvercatcher.reforged.api.ItemExtension;
 
-import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.RecipeSorter;
@@ -22,7 +21,7 @@ public class Registry {
 	/**Registers all items on the given list*/
 	public static void registerItems(List<Item> regListItems) {
 		for(Item item : regListItems) {
-			GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+			GameRegistry.register(item, new ResourceLocation(ModReforgedIntegration.ID, item.getUnlocalizedName().substring(5)));
 		}
 	}
 	
@@ -58,13 +57,7 @@ public class Registry {
 	 * @param c The class of the Entity
 	 * @param name The name for the Entity*/
 	public static void registerEntity(Class c, String name) {
-		EntityRegistry.registerModEntity(c, name, ++counterEntities, ModReforgedIntegration.instance, 120, 1, true);		
+		EntityRegistry.registerModEntity(new ResourceLocation(ModReforgedIntegration.ID, name), c, name, ++counterEntities, ModReforgedIntegration.instance, 120, 1, true);		
 	}
-
-	/**Helper method for binding a renderclass to a entity
-	 * @param entityclass The class of the Entity
-	 * @param renderclass The class of the Renderer*/
-	public static void registerEntityRenderer(Class entityclass, Render renderclass) {
-		RenderingRegistry.registerEntityRenderingHandler(entityclass, renderclass);
-	}
+	
 }

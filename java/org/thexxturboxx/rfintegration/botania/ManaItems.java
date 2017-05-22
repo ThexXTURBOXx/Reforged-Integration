@@ -2,12 +2,12 @@ package org.thexxturboxx.rfintegration.botania;
 
 import org.silvercatcher.reforged.items.weapons.*;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import vazkii.botania.api.mana.ManaItemHandler;
 import vazkii.botania.common.item.equipment.tool.ToolCommons;
@@ -27,9 +27,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -54,9 +55,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -81,9 +83,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -108,9 +111,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -135,9 +139,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -162,9 +167,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -189,9 +195,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -216,9 +223,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
@@ -243,9 +251,10 @@ public abstract class ManaItems {
 		}
 		
 		@Override
-		public boolean onBlockDestroyed(ItemStack stack, World world, Block block, BlockPos pos, EntityLivingBase entity) {
-			if(usesMana(stack) && block.getBlockHardness(world, pos) != 0F)
-				ToolCommons.damageItem(stack, 1, entity, 60);
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos,
+				EntityLivingBase entityLiving) {
+			if(usesMana(stack) && state.getBlockHardness(worldIn, pos) != 0F)
+				ToolCommons.damageItem(stack, 1, entityLiving, 60);
 			return true;
 		}
 		
