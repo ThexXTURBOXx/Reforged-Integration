@@ -14,11 +14,11 @@ public class Global {
 	public static final String ChildDeps = "required-after:reforged;required-after:ReforgedIntegrationCore";
 	
 	/**Accepted Minecraft Versions*/
-	public static final String AcceptedVersions = "[1.9, 1.11.2]";
+	public static final String AcceptedVersions = "[1.11, 1.11.2]";
 	
 	/**The version of the mods*/
-	public static final String VERSION = "0.3";
+	public static final String VERSION = "0.4";
 	
 	/**The version of the mods*/
-	public static final String updateJSON = "https://raw.githubusercontent.com/ThexXTURBOXx/Reforged-Integration/1.11.2/update.json";
+	public static final String updateJSON = "https://raw.githubusercontent.com/ThexXTURBOXx/UpdateJSONs/master/rf-integration.json";
 }
