@@ -1,0 +1,7 @@
+{
+    "parent": "reforged:item/musket",
+
+    "textures": {
+        "layer0": "reforgedintegrationcore:items/musket_rm"
+    }
+}

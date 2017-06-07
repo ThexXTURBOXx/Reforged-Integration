@@ -1,0 +1,6 @@
+{
+    "parent": "reforged:item/boomerang",
+    "textures": {
+        "layer0": "reforgedintegrationcore:items/boomerang_terrasteel"
+    }
+}

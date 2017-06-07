@@ -1,0 +1,81 @@
+itemGroup.reforgedintegration=Reforged Integration
+
+item.thaumium_battleaxe.name=Thaumiumstreitaxt
+item.thaumium_boomerang.name=Thaumiumbumerang
+item.thaumium_saber.name=Thaumiumsäbel
+item.thaumium_musket.name=Muskete mit Thaumiumbajonett
+item.thaumium_knife.name=Thaumiummesser
+item.thaumium_katana.name=Thaumiumkatana
+item.thaumium_mace.name=Thaumiumkeule
+item.thaumium_pike.name=Thaumiumpike
+item.thaumium_dirk.name=Thaumiumdolch
+
+item.void_battleaxe.name=Leerenmetallstreitaxt
+item.void_boomerang.name=Leerenmetallbumerang
+item.void_saber.name=Leerenmetallsäbel
+item.void_musket.name=Muskete mit Leerenmetallbajonett
+item.void_knife.name=Leerenmetallmesser
+item.void_katana.name=Leerenmetallkatana
+item.void_mace.name=Leerenmetallkeule
+item.void_pike.name=Leerenmetallpike
+item.void_dirk.name=Leerenmetalldolch
+
+item.dark_matter_battleaxe.name=Dunkle Materiestreitaxt
+item.dark_matter_boomerang.name=Dunkler Materiebumerang
+item.dark_matter_saber.name=Dunkler Materiesäbel
+item.dark_matter_musket.name=Muskete mit Dunklem Materiebajonett
+item.dark_matter_knife.name=Dunkles Materiemesser
+item.dark_matter_katana.name=Dunkler Materiekatana
+item.dark_matter_mace.name=Dunkle Materiekeule
+item.dark_matter_pike.name=Dunkle Materiepike
+item.dark_matter_dirk.name=Dunkler Materiedolch
+
+item.red_matter_battleaxe.name=Rote Materiestreitaxt
+item.red_matter_boomerang.name=Roter Materiebumerang
+item.red_matter_saber.name=Roter Materiesäbel
+item.red_matter_musket.name=Muskete mit Rotem Materiebajonett
+item.red_matter_knife.name=Rotes Materiemesser
+item.red_matter_katana.name=Roter Materiekatana
+item.red_matter_mace.name=Rote Materiekeule
+item.red_matter_pike.name=Rote Materiepike
+item.red_matter_dirk.name=Roter Materiedolch
+
+item.manasteel_battleaxe.name=Manastahlstreitaxt
+item.manasteel_boomerang.name=Manastahlbumerang
+item.manasteel_saber.name=Manastahlsäbel
+item.manasteel_musket.name=Muskete mit Manastahlbajonett
+item.manasteel_knife.name=Manastahlmesser
+item.manasteel_katana.name=Manastahlkatana
+item.manasteel_mace.name=Manastahlkeule
+item.manasteel_pike.name=Manastahlpike
+item.manasteel_dirk.name=Manastahldolch
+
+item.elementium_battleaxe.name=Elementiumstreitaxt
+item.elementium_boomerang.name=Elementiumbumerang
+item.elementium_saber.name=Elementiumsäbel
+item.elementium_musket.name=Muskete mit Elementiumbajonett
+item.elementium_knife.name=Elementiummesser
+item.elementium_katana.name=Elementiumkatana
+item.elementium_mace.name=Elementiumkeule
+item.elementium_pike.name=Elementiumpike
+item.elementium_dirk.name=Elementiumdolch
+
+item.terrasteel_battleaxe.name=Terrastahlstreitaxt
+item.terrasteel_boomerang.name=Terrastahlbumerang
+item.terrasteel_saber.name=Terrastahlsäbel
+item.terrasteel_musket.name=Muskete mit Terrastahlbajonett
+item.terrasteel_knife.name=Terrastahlmesser
+item.terrasteel_katana.name=Terrastahlkatana
+item.terrasteel_mace.name=Terrastahlkeule
+item.terrasteel_pike.name=Terrastahlpike
+item.terrasteel_dirk.name=Terrastahldolch
+
+item.amethyst_battleaxe.name=Amethyststreitaxt
+item.amethyst_boomerang.name=Amethystbumerang
+item.amethyst_saber.name=Amethystsäbel
+item.amethyst_musket.name=Muskete mit Amethystbajonett
+item.amethyst_knife.name=Amethystmesser
+item.amethyst_katana.name=Amethystkatana
+item.amethyst_mace.name=Amethystkeule
+item.amethyst_pike.name=Amethystpike
+item.amethyst_dirk.name=Amethystdolch
